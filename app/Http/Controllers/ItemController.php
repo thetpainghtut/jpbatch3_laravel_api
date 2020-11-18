@@ -10,7 +10,7 @@ class ItemController extends Controller
 {
     public function __construct($value='')
     {
-        $this->middleware('auth:api');
+        $this->middleware('auth:api')->only('store');
     }
     /**
      * Display a listing of the resource.
